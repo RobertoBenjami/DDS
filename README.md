@@ -1,7 +1,7 @@
 # DDS (Direct Digital Synthesis)
-This is a project control of ad9851 with stm32f103c The project is not finished yet, but the frequency generator part is already running.
+This is a project control of ad9851 with stm32f103c. The project is not finished yet, but the frequency generator part is already running.
 
-Hardvare config:
+Hardware config:
 
 - AD9851 DDS module or chip (paralell mode, can modify in Src/App/ddsdrv.h)
   - DDS_D0 : PA0
