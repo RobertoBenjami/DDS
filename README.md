@@ -1,5 +1,6 @@
 # DDS (Direct Digital Synthesis)
 This is a project control of ad9851 with stm32f103c. The project is not finished yet, but the frequency generator part is already running.
+https://www.youtube.com/watch?v=VNst1mxlSR0
 
 Hardware config:
 
