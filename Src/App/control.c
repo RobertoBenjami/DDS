@@ -67,10 +67,9 @@
 #define GPIOX_PORTNUM_F       6
 #define GPIOX_PORTNUM_G       7
 #define GPIOX_PORTNUM_H       8
-#define GPIOX_PORTNUM_J       9
-#define GPIOX_PORTNUM_K       10
-#define GPIOX_PORTNUM_L       11
-#define GPIOX_PORTNUM_M       12
+#define GPIOX_PORTNUM_I       9
+#define GPIOX_PORTNUM_J       10
+#define GPIOX_PORTNUM_K       11
 #define GPIOX_PORTNUM_(a, b)  GPIOX_PORTNUM_ ## a
 #define GPIOX_PORTNUM(a)      GPIOX_PORTNUM_(a)
 
@@ -120,7 +119,6 @@ void StartControlTask(void const * argument)
   TIMX->CCMR1 = (1 << TIM_CCMR1_CC1S_Pos) | (1 << TIM_CCMR1_CC2S_Pos);
   TIMX->CCER = TIM_CCER_CC1E | TIM_CCER_CC2E;
   TIMX->SMCR = (3 << TIM_SMCR_SMS_Pos);
-  // TIMX->ARR = 0xFFFF;
   TIMX->CR1 |= TIM_CR1_CEN;
 
   while(1)
